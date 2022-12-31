@@ -36,7 +36,6 @@ app.post('/note', (req, res) => {
     }).catch(() => {
         res.status(400).send("This item has not been send to the database")
     });
-    // res.render('home.pug');
 })
 
 // START THE SERVER
