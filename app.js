@@ -22,12 +22,20 @@ app.use(express.urlencoded())
 
 // HTML SPECIFIC STUFF
 app.set('view engine', 'html'); // Set the tamplet engine as html
-app.set('views', path.join(__dirname, 'views')); // Set the views directory
+// app.set('views', path.join(__dirname, 'views')); // Set the views directory
+
+
+app.set(__dirname + '/index.html'); // Set the views directory
+
 
 // ENDPOINS
 app.get('/', (req, res) => { 
     const params = {}
-    res.sendFile(__dirname + '/views/index.html');
+    // res.sendFile(__dirname + '/views/index.html');
+    
+  res.sendFile(__dirname + '/index.html');
+
+
 })
 app.post('/note', (req, res) => {
     var myData = new note(req.body);
