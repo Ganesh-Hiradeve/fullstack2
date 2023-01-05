@@ -262,12 +262,12 @@ h6 {
   width: 100%;
   height: 100vh;
   /* background: url("https://img.freepik.com/premium-vector/programmer-coder-concentrated-working-project-developing-programming-coding-technologies_569013-338.jpg?w=360") top center;  */
-  background: url("http://images.squarespace-cdn.com/content/v1/5ec19f3151c4b27b5eed8927/1604071831849-N7VUOHGUU1R3NA2XW0XN/home-office-desktop-showing-web-design-creator-3d-rendering.jpg") top center;
-  background-size: cover;
+  background: url("https://us.123rf.com/450wm/ddtek/ddtek1903/ddtek190300069/ddtek190300069.jpg?ver=6") top center;
   background-repeat: no-repeat;
-  background-attachment: fixed;  
-  
-  /*
+
+  object-fit: fill;
+
+     /*
   background-position: 800px 10px;
   right:0; */
   /* background-color: black; */
