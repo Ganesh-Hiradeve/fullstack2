@@ -20,6 +20,7 @@ var note = mongoose.model('note', noteSchema);
 
 
 app.use('/assets', express.static('assets')); 
+
 app.use(express.urlencoded())
 
 
