@@ -19,7 +19,9 @@ var note = mongoose.model('note', noteSchema);
 
 
 
-app.use('/assets', express.static('assets')); 
+// app.use('/assets', express.static('assets')); 
+app.use('/assets',express.static(__dirname + '/assets')); 
+
 
 app.use(express.urlencoded())
 

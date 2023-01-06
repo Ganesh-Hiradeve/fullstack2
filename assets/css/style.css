@@ -1,5 +1,10 @@
 
 
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
 .img-fluid{
   border-radius: 5px;
 
@@ -261,29 +266,40 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  /* background: url("https://img.freepik.com/premium-vector/programmer-coder-concentrated-working-project-developing-programming-coding-technologies_569013-338.jpg?w=360") top center;  */
-  background: url("https://us.123rf.com/450wm/ddtek/ddtek1903/ddtek190300069/ddtek190300069.jpg?ver=6") top center;
-  background-repeat: no-repeat;
-
+  /* background: url("https://img.freepik.com/premium-vector/software-developer-programming-desktop-with-code-symbols_24877-70808.jpg?w=2000") ; */
+  
+  z-index: 1;
+  background-color: white;
+   background-image: url('/assets/img/s13.jpg'); 
+  background-position: top;
   object-fit: fill;
+  background-size: cover;
 
-     /*
-  background-position: 800px 10px;
-  right:0; */
-  /* background-color: black; */
- 
+  /* background-position: 100px 0px ; */
+  right:0; 
+  /* background-color: #001F3F; */
+  
+
 }
+/* .omg1{
+    margin: 10px solid red;
+    border-radius: 55% 45% 44% 56% / 26% 39% 61% 74% ;
+    right: 0;
+    float: right;
+    
+} */
 
-#hero:before {
+/* #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+    background: rgba(36, 14, 227, 0.3);
+
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-}
+}  */
 
 #hero .hero-container {
   position: relative;
@@ -296,11 +312,11 @@ h6 {
   font-size: 40px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color:#fff;
 }
 
 #hero p {
-  color: #fff;
+  color:#fff;
   margin-bottom: 30px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -327,6 +343,7 @@ h6 {
   }
  
 }
+
 
 @media (max-width: 768px) {
   #hero h1 {
@@ -944,7 +961,11 @@ section {
   
 }
 
+
 .contact .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -952,6 +973,7 @@ section {
   /* border: 2px solid red; */
 
 }
+
 
 .contact .info i {
   font-size: 20px;
@@ -983,6 +1005,7 @@ section {
   margin-bottom: 20px;
   font-size: 14px;
   color: #173b6c;
+  
 }
 
 .contact .info .email p {
@@ -1198,8 +1221,11 @@ section {
   bottom: 0;
   width: 100%;
   z-index: 9999;
-  background: #e6ebf0;
+   background: #e6ebf0;
+  /* background: rgba(5, 48, 135, 0.3); */
+  /* background-color:  rgba(5, 48, 135, 0.3);  */
   color: black;
+  margin-bottom: -30px;
   
 }
 .check{
@@ -1653,10 +1679,11 @@ section {
   }
   
   .menu .nav-link h4 {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     margin: 0;
     font-family: var(--font-secondary);
+    
   }
   
   @media (max-width: 575px) {
@@ -1672,6 +1699,7 @@ section {
   .menu .nav-link.active {
     color: var(--color-primary);
     /* border-color: var(--color-primary); */
+    
     border-color: rgb(20 157 221);
   }
   
@@ -1819,5 +1847,9 @@ section {
   .messi{
     display: flex;
     gap: 10px;
+  
   }
+  
+
+  
   
