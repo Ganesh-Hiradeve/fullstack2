@@ -1,3 +1,8 @@
 node_modules
 Readme.txt
 .vercel
+assets
+images
+static
+vendor
+index2.html
