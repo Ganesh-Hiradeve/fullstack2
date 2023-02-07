@@ -20,8 +20,8 @@ var note = mongoose.model('note', noteSchema);
 
 
 // app.use('/assets', express.static('assets')); 
-// app.use('/assets',express.static(__dirname + '/assets')); 
-app.use('/style1.css', express.static(__dirname +'/style1.css')); 
+app.use('/assets',express.static(__dirname + '/assets')); 
+// app.use('/style1.css', express.static(__dirname +'/style1.css')); 
 
 
 
@@ -39,7 +39,8 @@ app.get('/', (req, res) => {
 app.post('/note', (req, res) => {
     var myData = new note(req.body);
     myData.save().then(() => {
-        res.send("Submitted Successfully")
+        // res.send("form submitted")
+        res.redirect("http://localhost:1000/")
     }).catch(() => {
         res.status(400).send("This item has not been send to the database")
     });
